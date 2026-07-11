@@ -5,6 +5,10 @@ TagManager:
   serializedVersion: 3
   tags:
   - UserInterface
+  - Level
+  - Enemy
+  - Health
+  - Void
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Level
   - 
   - 
   - 
@@ -41,6 +45,33 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Background 3 (-5)
+    uniqueID: 3354682961
+    locked: 0
+  - name: Background 2 (-4)
+    uniqueID: 2394223643
+    locked: 0
+  - name: Background 1 (-3)
+    uniqueID: 1061284753
+    locked: 0
+  - name: Background Static (-2)
+    uniqueID: 1124794183
+    locked: 0
+  - name: Furniture (-1)
+    uniqueID: 1613709169
+    locked: 0
+  - name: Playground (0)
+    uniqueID: 2935483355
+    locked: 0
+  - name: Foreground (+1)
+    uniqueID: 3605803843
+    locked: 0
+  - name: UI
+    uniqueID: 235187813
+    locked: 0
+  - name: FrontAll
+    uniqueID: 1034157147
     locked: 0
   m_RenderingLayers:
   - Default

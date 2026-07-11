@@ -21,7 +21,7 @@ public class UIFadeLoad : MonoBehaviour
     [SerializeField] private GameObject loadingScreen;
     [SerializeField] private Image loadingBarMask;
 
-    public static UIFadeLoad Instance;
+    public static UIFadeLoad Instance { get; private set; }
 
     private void OnEnable()
     {
@@ -39,12 +39,17 @@ public class UIFadeLoad : MonoBehaviour
 
     private void Awake()
     {
-
+        if (Instance != null && Instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+        Instance = this;
     }
 
     private void Start()
     {
-        Instance = this;
+        loadingScreen.SetActive(false);
         FadeIn(fadeInAlpha, fadeInDuration);
     }
 
@@ -73,7 +78,7 @@ public class UIFadeLoad : MonoBehaviour
     {
         FadeOut(fadeOutAlpha, fadeOutDuration);
 
-        yield return new WaitForSeconds(fadeOutDuration + 0.1f);
+        yield return new WaitForSecondsRealtime(fadeOutDuration + 0.1f);
 
         if (menuToClose)
         {
