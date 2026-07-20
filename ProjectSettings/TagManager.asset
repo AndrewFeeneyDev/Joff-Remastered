@@ -9,6 +9,8 @@ TagManager:
   - Enemy
   - Health
   - Void
+  - Coin
+  - xyzPart
   layers:
   - Default
   - TransparentFX

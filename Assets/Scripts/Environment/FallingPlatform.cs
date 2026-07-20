@@ -19,6 +19,7 @@ public class FallingPlatform : MonoBehaviour
     private Tween platformShake;
 
     private Rigidbody2D rb2d;
+    private Collider2D collider;
     private bool hasFallen = false;
 
     private ParticleSystem platformEffects;
@@ -28,6 +29,7 @@ public class FallingPlatform : MonoBehaviour
     {
         rb2d = gameObject.GetComponent<Rigidbody2D>();
         platformEffects = gameObject.GetComponentInChildren<ParticleSystem>();
+        collider = gameObject.GetComponent<Collider2D>();
 
         hoverStart = rb2d.position.y;
         shakeStart = rb2d.position.x;
@@ -68,6 +70,7 @@ public class FallingPlatform : MonoBehaviour
         platformShake.Kill();
         rb2d.gravityScale = 1f;
         rb2d.constraints = RigidbodyConstraints2D.None;
+        collider.enabled = false;
         platformEffects.Stop();
         hasFallen = true;
 

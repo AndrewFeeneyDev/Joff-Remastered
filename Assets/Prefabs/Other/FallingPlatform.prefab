@@ -10,9 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7474856546622284348}
   - component: {fileID: 4705416548293783812}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Left
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,9 +102,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2680335747847106842}
   - component: {fileID: 7290013231738566819}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Mid
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 4262274210198053230}
   - component: {fileID: 7098435757785304142}
   - component: {fileID: 7282217438260235635}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: EngineFlare
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5030,9 +5030,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4383069554874647568}
   - component: {fileID: 7487386696252250237}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Right
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5122,9 +5122,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8328663701863776189}
   - component: {fileID: 8778865931932752878}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Engine
-  m_TagString: Untagged
+  m_TagString: Level
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5217,9 +5217,9 @@ GameObject:
   - component: {fileID: 5997214205200997104}
   - component: {fileID: 5944387751277281294}
   - component: {fileID: 4809524432076138304}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: FallingPlatform
-  m_TagString: Level
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5259,7 +5259,7 @@ BoxCollider2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 1024
+    m_Bits: 0
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -5312,7 +5312,7 @@ Rigidbody2D:
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4

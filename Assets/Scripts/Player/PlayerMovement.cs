@@ -246,6 +246,14 @@ public class PlayerMovement : MonoBehaviour
             Vector2 direction = (transform.position - collision.transform.position).normalized;
             StartCoroutine(Knockback(knockBackDuration, knockBackStrength, direction));
         }
+        if (collision.CompareTag("Coin"))
+        {
+            GameMaster.Instance.AddToScore(1);
+        }
+        if (collision.CompareTag("xyzPart"))
+        {
+            GameMaster.Instance.AddToXYZ(1);
+        }
     }
 
     /* Debuging */
